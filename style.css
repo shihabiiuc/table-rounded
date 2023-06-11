@@ -1,0 +1,188 @@
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #FFFFFF;
+  padding: 0;
+  margin: 0;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 16px;
+}
+
+.example {
+  background-size: 270px 49px;
+  background-repeat: no-repeat;
+  background-position: top center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 90px 15px;
+  background-color: #d4f3ff;
+}
+.example:nth-child(even) {
+  background-color: #f5fff8;
+}
+
+.example-1 {
+  background-image: url("./img/example-one.png");
+  /* required css to make rounded table (below) */
+}
+.example-1 table {
+  border-collapse: separate;
+  border-spacing: 0;
+  overflow: hidden;
+}
+.example-1 th {
+  background-color: #e0413d;
+  color: #FFFFFF;
+}
+.example-1 th, .example-1 td {
+  padding: 10px;
+  border: 1px solid #FF0000;
+}
+.example-1 tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+.example-1 tr:first-child th:first-child {
+  border-top-left-radius: 10px;
+}
+.example-1 tr:first-child th:last-child {
+  border-top-right-radius: 10px;
+}
+.example-1 tr:last-child td:first-child {
+  border-bottom-left-radius: 10px;
+}
+.example-1 tr:last-child td:last-child {
+  border-bottom-right-radius: 10px;
+}
+
+.example-2 {
+  background-image: url("./img/example-two.png");
+  /* required css to make the rows rounded */
+}
+.example-2 table {
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.example-2 th {
+  background-color: #FFA000;
+  color: #FFFFFF;
+}
+.example-2 th, .example-2 td {
+  padding: 10px;
+  border: 1px solid black;
+}
+.example-2 tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+.example-2 tr:hover {
+  background-color: #ddd;
+}
+.example-2 th:first-child, .example-2 td:first-child {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.example-2 th:last-child, .example-2 td:last-child {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.example-2 tr:first-child th:first-child {
+  border-top-left-radius: 10px;
+}
+.example-2 tr:first-child th:last-child {
+  border-top-right-radius: 10px;
+}
+.example-2 tr:last-child td:first-child {
+  border-bottom-left-radius: 10px;
+}
+.example-2 tr:last-child td:last-child {
+  border-bottom-right-radius: 10px;
+}
+
+.example-3 {
+  background-image: url("./img/example-three.png");
+  /* required css to make columns rounded */
+}
+.example-3 table {
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.example-3 th {
+  background-color: #05ab30;
+  color: #FFFFFF;
+}
+.example-3 th, .example-3 td {
+  padding: 10px;
+  border: 1px solid black;
+}
+.example-3 tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+.example-3 tr:hover {
+  background-color: #ddd;
+}
+.example-3 th {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.example-3 tr:last-child td {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.example-4 {
+  background-image: url("./img/example-four.png");
+}
+.example-4 table {
+  border-collapse: separate;
+  border-spacing: 0;
+  overflow: hidden;
+}
+.example-4 th {
+  background-color: #182860;
+  color: #FFFFFF;
+}
+.example-4 th, .example-4 td {
+  padding: 10px;
+  border: 1px solid #223575;
+}
+.example-4 tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+.example-4 th:first-child, .example-4 td:first-child {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.example-4 th:last-child, .example-4 td:last-child {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.example-4 tr:first-child th:first-child {
+  border-top-left-radius: 10px;
+}
+.example-4 tr:first-child th:last-child {
+  border-top-right-radius: 10px;
+}
+.example-4 tr:last-child td:first-child {
+  border-bottom-left-radius: 10px;
+}
+.example-4 tr:last-child td:last-child {
+  border-bottom-right-radius: 10px;
+}
+.example-4 th {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.example-4 tr:last-child td {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}/*# sourceMappingURL=style.css.map */
