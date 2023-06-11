@@ -27,6 +27,13 @@ body {
 .example:nth-child(even) {
   background-color: #f5fff8;
 }
+.example table {
+  width: 100%;
+  max-width: 500px;
+}
+.example table th {
+  text-align: left;
+}
 
 .example-1 {
   background-image: url("./img/example-one.png");
