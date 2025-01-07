@@ -1,41 +1,22 @@
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
 body {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   padding: 0;
   margin: 0;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-size: 16px;
 }
 
-header {
-  background-color: #15232D;
-  padding: 20px 15px;
-}
-header p {
-  padding: 0;
-  margin: 0;
-  text-align: center;
-  color: #FFC600;
-  font-size: 1.2em;
-}
-header p a {
-  color: #4285F4;
-}
-
 .example {
   background-size: 270px 49px;
   background-repeat: no-repeat;
   background-position: top center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   padding: 90px 15px;
   background-color: #d4f3ff;
 }
@@ -45,6 +26,20 @@ header p a {
 .example table {
   width: 100%;
   max-width: 500px;
+  margin: 0 auto;
+  border-spacing: 0;
+}
+.example table tr:first-child th {
+  border-top-width: 2px;
+}
+.example table tr:last-child td {
+  border-bottom-width: 2px;
+}
+.example table tr td:last-child {
+  border-right-width: 2px;
+}
+.example table tr td:first-child {
+  border-left-width: 2px;
 }
 .example table th {
   text-align: left;
@@ -52,111 +47,87 @@ header p a {
 
 .example-1 {
   background-image: url("./img/example-one.png");
-  /* required css to make rounded table (below) */
 }
 .example-1 table {
-  border-collapse: separate;
-  border-spacing: 0;
-  overflow: hidden;
+  /* required css to make rounded table (below) */
 }
-.example-1 th {
-  background-color: #e0413d;
-  color: #FFFFFF;
-}
-.example-1 th, .example-1 td {
-  padding: 10px;
-  border: 1px solid #FF0000;
-}
-.example-1 tr:nth-child(even) {
+.example-1 table tr:nth-child(even) {
   background-color: #f2f2f2;
 }
-.example-1 tr:first-child th:first-child {
+.example-1 table th {
+  background-color: #e0413d;
+  color: #ffffff;
+}
+.example-1 table th,
+.example-1 table td {
+  padding: 10px;
+  border: 1px solid #ff0000;
+}
+.example-1 table tr:first-child th:first-child {
   border-top-left-radius: 10px;
 }
-.example-1 tr:first-child th:last-child {
+.example-1 table tr:first-child th:last-child {
   border-top-right-radius: 10px;
 }
-.example-1 tr:last-child td:first-child {
+.example-1 table tr:last-child td:first-child {
   border-bottom-left-radius: 10px;
 }
-.example-1 tr:last-child td:last-child {
+.example-1 table tr:last-child td:last-child {
   border-bottom-right-radius: 10px;
 }
 
 .example-2 {
   background-image: url("./img/example-two.png");
-  /* required css to make the rows rounded */
 }
 .example-2 table {
-  border-collapse: separate;
-  border-spacing: 0;
-  border-radius: 10px;
-  overflow: hidden;
+  /* required css to make the rows rounded */
 }
-.example-2 th {
-  background-color: #FFA000;
-  color: #FFFFFF;
+.example-2 table tr:nth-child(even) {
+  background-color: #f2f2f2;
 }
-.example-2 th, .example-2 td {
+.example-2 table th {
+  background-color: #ffa000;
+  color: #ffffff;
+}
+.example-2 table th,
+.example-2 table td {
   padding: 10px;
   border: 1px solid black;
 }
-.example-2 tr:nth-child(even) {
-  background-color: #f2f2f2;
-}
-.example-2 tr:hover {
-  background-color: #ddd;
-}
-.example-2 th:first-child, .example-2 td:first-child {
+.example-2 table tr th:first-child,
+.example-2 table tr td:first-child {
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
 }
-.example-2 th:last-child, .example-2 td:last-child {
+.example-2 table tr th:last-child,
+.example-2 table tr td:last-child {
   border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
-}
-.example-2 tr:first-child th:first-child {
-  border-top-left-radius: 10px;
-}
-.example-2 tr:first-child th:last-child {
-  border-top-right-radius: 10px;
-}
-.example-2 tr:last-child td:first-child {
-  border-bottom-left-radius: 10px;
-}
-.example-2 tr:last-child td:last-child {
   border-bottom-right-radius: 10px;
 }
 
 .example-3 {
   background-image: url("./img/example-three.png");
-  /* required css to make columns rounded */
 }
 .example-3 table {
-  border-collapse: separate;
-  border-spacing: 0;
-  border-radius: 10px;
-  overflow: hidden;
+  /* required css to make columns rounded */
 }
-.example-3 th {
+.example-3 table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+.example-3 table th {
   background-color: #05ab30;
-  color: #FFFFFF;
+  color: #ffffff;
 }
-.example-3 th, .example-3 td {
+.example-3 table th,
+.example-3 table td {
   padding: 10px;
   border: 1px solid black;
 }
-.example-3 tr:nth-child(even) {
-  background-color: #f2f2f2;
-}
-.example-3 tr:hover {
-  background-color: #ddd;
-}
-.example-3 th {
+.example-3 table tr:first-child th {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
-.example-3 tr:last-child td {
+.example-3 table tr:last-child td {
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
 }
@@ -165,46 +136,35 @@ header p a {
   background-image: url("./img/example-four.png");
 }
 .example-4 table {
-  border-collapse: separate;
-  border-spacing: 0;
-  overflow: hidden;
+  /* required css to make rows & columns rounded */
 }
-.example-4 th {
+.example-4 table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+.example-4 table th {
   background-color: #182860;
-  color: #FFFFFF;
+  color: #ffffff;
 }
-.example-4 th, .example-4 td {
+.example-4 table th,
+.example-4 table td {
   padding: 10px;
   border: 1px solid #223575;
 }
-.example-4 tr:nth-child(even) {
-  background-color: #f2f2f2;
-}
-.example-4 th:first-child, .example-4 td:first-child {
+.example-4 table tr th:first-child,
+.example-4 table tr td:first-child {
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
 }
-.example-4 th:last-child, .example-4 td:last-child {
+.example-4 table tr th:last-child,
+.example-4 table tr td:last-child {
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
 }
-.example-4 tr:first-child th:first-child {
-  border-top-left-radius: 10px;
-}
-.example-4 tr:first-child th:last-child {
-  border-top-right-radius: 10px;
-}
-.example-4 tr:last-child td:first-child {
-  border-bottom-left-radius: 10px;
-}
-.example-4 tr:last-child td:last-child {
-  border-bottom-right-radius: 10px;
-}
-.example-4 th {
+.example-4 table tr:first-child th {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
-.example-4 tr:last-child td {
+.example-4 table tr:last-child td {
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
 }/*# sourceMappingURL=style.css.map */
